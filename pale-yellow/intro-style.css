@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Kodchasan:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #FFFF99;
+    --background: #1B1B1B;
+}
+
+html{
+    font-family: 'Andika', sans-serif;
+    font-size: 18px;
+    /* font-family: 'Kodchasan', sans-serif; */
+}
+
+body{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    color: var(--color);
+}
+
+.intro-wrapper{
+    border: 5px double var(--color);
+    border-radius: 0 1rem 0 1rem;
+    width: 55ch;
+    margin-inline: auto;
+    text-align: center;
+    padding: 1rem;
+    transform: rotate(-2deg);
+}
+
+.intro-title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.intro-sub{
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+
+.btn{
+    width: 15ch;
+    height: 5ch;
+    border-radius: 0 1rem 0 1rem;
+    border: 3px double var(--color);
+    background: transparent;
+    color: var(--color);
+    cursor: pointer;
+    transition: tranform 250ms ease-in;
+}
+
+.btn:hover{
+    transform: rotate(2deg) translateY(-5px);
+}
+
+.two{
+    border-radius: 1rem 0 1rem 0;
+    margin-left: 1rem;
+}
+
+.one:hover{
+    background: #135f13ab;
+}
+.two:hover{
+    background: #6e1213b6;
+}

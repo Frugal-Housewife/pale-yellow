@@ -1,0 +1,234 @@
+/*========================================Global==========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Kodchasan:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #FFFF99;
+    --background: #1B1B1B;
+    --margin-bottom: 5rem;
+}
+
+html{
+    font-family: 'Andika', sans-serif;
+    font-size: 18px;
+    /* font-family: 'Kodchasan', sans-serif; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    color: var(--color);
+    padding-inline: 10rem;
+}
+/*=========================================Navigation=========================================*/
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 5svh;
+    top: 0;
+    padding-inline: 10rem;
+    border-bottom: 5px double var(--color);
+    background: var(--background);
+    z-index: 100;
+
+    width: 81.3%;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* a>i{
+    font-size: 1.5rem;
+    color: var(--color);
+    margin-left: 5rem;
+} */
+
+a:hover{
+    box-shadow: 0px 9px 30px rgba(255, 230, 5, 0.39);
+   
+}
+i{
+    font-size: 1.5rem;
+    color: var(--color);
+    /* margin-left: 2rem; */
+}
+/*===========================================Main=======================================*/
+.main-wrapper{
+    /* outline: 1px solid lime; */
+    display: flex;
+    height: 95svh;
+    width: 100%;
+    position: relative;
+    top: 2.5svh;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2rem; */
+    margin-bottom: var(--margin-bottom);
+}
+
+.main-text{
+    transform: rotate(-2deg);
+    margin-inline: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+} 
+.main-header{
+    font-size: 2.4rem;
+    font-weight: 700;
+    width: 30ch;
+    margin-bottom: 2.2rem;
+    line-height: 2.8rem;
+}
+
+
+.main-para{
+    font-size: 1.2rem;
+    width: 60ch;
+    line-height: 1.7;
+}
+
+.main-other{
+    outline: 5px double var(--color);
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+    transform: rotate(-2deg);
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    
+}
+.main-other:hover{
+    box-shadow: 0px 9px 30px rgba(255, 230, 5, 0.39);
+}
+
+.other-inner{
+    outline: 5px double var(--color);
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pale-yellow{
+    font-size: 3.8rem;
+    font-family: 'Kodchasan', sans-serif;
+    transform: rotate(-2deg);
+}
+/*===========================================Mid=======================================*/
+.mid-wrapper{
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.card{
+    width: 30ch;
+    text-align: center;
+    background: var(--background);
+    padding: 2rem;
+    border-radius: 0 1rem 0 1rem;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    
+}
+.card:hover{
+    box-shadow: 0px 9px 30px rgba(255, 230, 5, 0.39);
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+    line-height: 2.1rem;
+}
+.para{
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+}
+.pro-btn i{
+    transition: all 250ms ease-out;
+    font-size: 3.1rem;
+}
+.pro-btn:hover{
+    transform: scale(1.4);
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+/*===========================================Bottom=======================================*/
+.bottom-wrapper{
+    height: 100svh;
+    width: 100%;
+    /* outline: 1px solid hotpink; */
+    margin-bottom: var(--margin-bottom);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.box{
+    width: 22ch;
+    background: var(--background);
+    text-align: center;
+    border-radius: 0 1rem 0 1rem;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    padding: 1rem;
+    transition: all 250ms ease-in;
+}
+.box:hover{
+    color: var(--background);
+    background: var(--color);
+    transform: scale(1.5);
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    outline: 6px double var(--color);
+}
+.box>p{
+    font-size: 1.1rem;
+    
+}
+
+/*===========================================Footer=======================================*/
+.footer-wrapper{
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    height: 5svh;
+    bottom: 0;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px double var(--color);
+}
