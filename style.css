@@ -65,10 +65,9 @@ body{
     margin-left: 5rem;
 } */
 
-a:hover{
-    box-shadow: 0px 9px 30px rgba(255, 230, 5, 0.39);
-   
-}
+/* a:hover{
+    box-shadow: 0px 9px 30px rgba(255, 230, 5, 0.39);  
+} */
 i{
     font-size: 1.5rem;
     color: var(--color);
@@ -196,7 +195,27 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    /* gap: 6rem; */
+    text-align: center;
+}
+
+.bottom-wrapper>h2{
+    background: var(--background);
+    color: var(--color);
+    border-radius: 0 1rem 0 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    border-bottom: 5px double var(--color);
+    border-top: 5px double var(--color);
+}
+
+.box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5.8rem;
 }
 .box{
     width: 22ch;
@@ -205,7 +224,7 @@ button{
     border-radius: 0 1rem 0 1rem;
     box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
     padding: 1rem;
-    transition: all 250ms ease-in;
+    transition: all 320ms ease-in;
 }
 .box:hover{
     color: var(--background);
@@ -215,10 +234,106 @@ button{
     outline: 6px double var(--color);
 }
 .box>p{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     
 }
 
+/*===========================================Contact=======================================*/
+.contacts-wrapper{
+    /* outline: 1px solid yellow; */
+    height: 100svh;
+    width: 100%;
+    margin-bottom: var(--margin-bottom);
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.contacts-top{
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.contacts-top>h2{
+    margin-top: 2rem;
+}
+.contacts-top input{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    width: 40ch;
+    height: 4ch;
+
+    /* background: var(--background);
+    color: var(--color); */
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.contacts-top button{
+    display: block;
+    width:6.2rem;
+    height: 2.1rem;
+    padding: auto;
+    margin-bottom: 1rem;
+    /* border: 5px double var(--color); */
+    border-radius: 1rem 1rem 0 0;
+    /* background: #1b1b1bbd; */
+    transition: all 200ms ease-in-out;
+}
+.contacts-top button:hover{
+    transform: translateY(-4px);
+}
+
+/* .contacts-top button>i{
+    transition: all 200ms ease-in-out;
+}
+.contacts-top button>i:hover{
+    transform: translateY(-10px) rotate(45deg);
+    transform-origin: center;
+} */
+
+.contacts-bottom{
+    position: relative;
+    /* outline: 1px solid lightseagreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    margin-top: 2rem;
+    padding: .5rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: red;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0 1rem 0 1rem;
+    background: var(--background);
+    color: var(--color);
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+}
+.icons i{
+    font-size: 1.8rem;
+}
 /*===========================================Footer=======================================*/
 .footer-wrapper{
     margin-top: 1rem;
