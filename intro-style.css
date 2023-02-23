@@ -76,7 +76,7 @@ body{
     background: #6e1213b6;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 360px){
     .intro-wrapper{
         transform: scale(0.6);
     }
