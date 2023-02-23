@@ -75,3 +75,9 @@ body{
 .two:hover{
     background: #6e1213b6;
 }
+
+@media only screen and (max-width: 375px){
+    .intro-wrapper{
+        transform: scale(0.6);
+    }
+}
