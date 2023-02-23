@@ -12,14 +12,14 @@
 <body>
     <div class="nav">
         <section class="nav-items">
-            <a href="#home"><i class="fa-solid fa-house-crack"></i></a>
-            <a href="#poetry"><i class="fa-solid fa-file"></i></a>
-            <a href="#contacts"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#home" title="Home"><i class="fa-solid fa-house-crack"></i></a>
+            <a href="#poetry" title="Gallery"><i class="fa-solid fa-file"></i></a>
+            <a href="#contacts" title="Contacts"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </div>
     <div class="main-wrapper" id="home">
         <div class="main-text">
-            <h2 class="main-header">Lorem ipsum dolor sit amet consectetur.</h2>
+            <h2 class="main-header" contenteditable>Lorem ipsum dolor sit amet consectetur.</h2>
             <p class="main-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad soluta hic vitae amet eum, reprehenderit id repellendus ipsum laboriosam ducimus quisquam accusantium adipisci nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam, optio exercitationem debitis expedita qui.</p>
         </div>
         <div class="main-other">
@@ -120,14 +120,15 @@
                 Tiny sparks of magic light<br>
                 Nature's enchantment</p> -->
             </div>
-            </div>
+        </div>
     </div>
     <div class="contacts-wrapper" id="contacts">
         <!-- <i class="fa-regular fa-envelope-open"></i> -->
         <div class="contacts-top">
-            <h2 class="main-header">Sign up for our awesome newsletter!</h2>
+            <h2 class="main-header">If you have a question feel free to write us!</h2>
             <form action="marcis351@gmail.com" method="POST">
-                <input type="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <textarea id="message" name="message" placeholder="I had a question..." required></textarea>
                 <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
             </form>
             
